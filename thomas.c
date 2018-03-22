@@ -177,6 +177,7 @@ void deleteProduct(LIST * head, const char * product){
 		printf("\n\n---== Product not found ==---\n\n");
 		return;
 	}
+
 	// Get node before search
 	while(head->next != temp){
 		head = head->next;
@@ -184,7 +185,7 @@ void deleteProduct(LIST * head, const char * product){
 
 	// Make next pointer null if does not exist
 	if(head->next->next != NULL){
-		head = head->next->next;
+		head->next = head->next->next;
 	} else {
 		head->next = NULL;
 	}
@@ -265,6 +266,7 @@ void sell(LIST * head, char * product){
 	// If product is not found
 	if(temp == NULL){
 		printf("\n\n---== Product not found ==---\n\n");
+		return;
 	}
 
 	// Decrease if temp exists

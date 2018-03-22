@@ -1,10 +1,5 @@
 Product: w
 Unit: w
-Price: 3
-Quantity: 3
-
-Product: e
-Unit: e
 Price: 2
 Quantity: 2
 

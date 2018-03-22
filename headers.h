@@ -5,7 +5,9 @@
 #define __HEADERS_
 
 // Header file containing functions used in thomas.c
+// By Zachary Thomas
 
+// Struct to hold data for inventory items
 struct list{
 	char product[20];
 	char unit[20];
@@ -14,6 +16,9 @@ struct list{
 	struct list *next;
 
 };
+
+// Functions defined in thomas.c along with
+// function descriptions.
 
 void displayMenu();
 struct list* createList();
